@@ -1,0 +1,344 @@
+
+
+body{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    align-content: center;
+}
+nav{
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    display: flex;
+    /* width: 95%; */
+    justify-content: space-between;
+    background-color:rgba(100, 90, 90, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem ;
+}
+
+nav h2{
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Darumadrop One';
+    font-weight: 800;
+}
+
+nav div p{
+    margin: 0;
+}
+
+nav h2 a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+nav div{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav div p a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+
+#hero{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    padding-left: 50%;
+    padding-top: 30.7rem;
+    padding-bottom: 3rem; 
+    /* padding-right: 1rem; */
+    animation: animate 10s none infinite;
+    background-size: cover;
+    /* color: white; */
+    background-color: rgba(100, 90, 90, 0.2);
+    background-position: center;
+     /* position: fixed; */
+}
+
+#hero div{
+    width: 30rem;
+    margin-left: 10rem;
+}
+
+@keyframes animate {
+    0%,100%{
+        background-image: url(/images/watch/watch_small.jpg);
+    }
+    20%{
+        background-image: url(/images/iphone_11/iphone_11_large.jpg);
+    }
+    40%{
+        background-image: url(/images/iphone_11/iphone_11_pro_large.jpg);
+        color: white;
+    }
+    60%{
+        background-image: url(/images/iphone_11/iphone_11_pro_medium.jpg);
+        color: white;
+    }
+    80%{
+        background-image: url(/images/watch/watch_large.jpg);
+    }
+}
+
+#main{
+    padding: 3rem;
+    background-color: rgb(60, 57, 57);
+}
+
+#main-content{
+    width: 87%;
+    margin: 0 auto;
+}
+
+#main-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.1rem;
+}
+
+#main-content img{
+    width: 24rem;
+    height: 19rem;
+    object-fit: cover;
+    margin: 0;
+}
+
+#main-content p{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+#main2{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    background-color: rgb(154, 157, 157);
+    padding: 1.5rem;
+}
+
+#main2-content{
+    width: 86%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#main2-images{
+    margin: 0 auto;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto ;
+    gap: 0.1rem;
+}
+
+#main2-images img{
+    width: 35rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+#main2-p2{
+    margin-top: 5rem;
+}
+
+#reach_out-section{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    background-color: #32302d;
+    padding: 3rem;
+    /* height: 45rem; */
+    color: rgb(205, 203, 203);
+}
+
+#reach_out-section a{
+    text-decoration: none;
+    color: rgb(205, 203, 203);
+}
+
+#reachout-content{
+    width: 90%;
+    margin: 0 auto;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#reachout-text{
+    text-align: left;
+}
+
+#social-media{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    width: 80%;
+    margin: auto auto;
+}
+
+.handles{
+    padding: 2rem;
+    border-radius: 20rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+.handles:hover{
+    box-shadow:  2px 4px 5px -2px rgba(0, 0, 0, .2),
+    -4px -2px 5px -2px rgba(255, 255, 255, .2);    
+}
+
+.availability-slots{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+
+#slot1,#slot2{
+    padding: 2rem 12rem;
+    border-radius: 10rem;
+    box-shadow:  2px 4px 5px -2px rgba(0, 0, 0, .2),
+     -4px -2px 5px -2px rgba(255, 255, 255, 0.2);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex-container {
+    /* position: absolute; */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.flex-title {
+    color: #f1f1f1;
+    position: relative;
+    font-size: 6vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 15%;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-title {
+        transform: rotate(0deg) !important;
+    }
+}
+
+.flex-about {
+    opacity: 0;
+    color: #f1f1f1;
+    position: relative;
+    width: 70%;
+    font-size: 2vw;
+    padding: 5%;
+    top: 20%;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin: auto;
+    text-align: left;
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-about {
+        padding: 0%;
+        border: 0px solid #f1f1f1;
+    }
+}
+
+.flex-slide {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.contact{
+    background-image: url(images/Random/5.jpg);
+    background-size: cover;
+}
+
+.about{
+    background-image: url(images/Random/6.jpg);
+    background-size: cover;
+}
+
+.work{
+    background-image: url(images/Random/7.jpg);
+    background-size: cover;
+}
+
+.home{
+    background-image: url(images/Random/9.jpg);
+    background-size: cover;
+}
+
+form input,textarea{
+    width: 13rem;
+    border: 0px;
+}
+
+form button{
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
